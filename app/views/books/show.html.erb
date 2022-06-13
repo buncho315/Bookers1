@@ -1,17 +1,16 @@
-<!DOCTYPE html>
+  <body>
+  <%= notice %>
+    <p>
+      <strong>Title:</strong>
+    <%= @book.title %>
+    </p>
+    <p>
+      <strong>Body:</strong>
+    <%= @book.body %>
+    </p>
+    <%= link_to "edit", edit_book_path(@book.id) %>
+     |
+    <%= link_to "back", books_path %>
 
-<body>
-  <p id="notice"></p>
-  <p>
-    <strong>Title:</strong>
-    
-  </p>
-  <p>
-    <stromg>Body:</stromg>
-    
-  </p>
-  
-  <a class="edit_" href="books/edit">Edit</a>
-    " | "
-    <a class="back" href="books">Back</a>
-</body>
+  </body>
+
